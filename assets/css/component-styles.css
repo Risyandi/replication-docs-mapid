@@ -13,8 +13,7 @@
     font-weight: bolder;
     position: absolute;
     line-height: 110%;
-    padding: 0 100px 0 100px;
-    /* background-color: rosybrown; */
+    padding: 0 50px 0 50px;
 }
 
 /* content */
@@ -61,4 +60,127 @@
     margin-left: 10px;
     font-size: 17px;
     color: black;
+}
+
+/* sidebar menu */
+.wrapper-sidebar-menu {
+    height: 80vh;
+    width: 300px;
+    max-width: 80vw;
+    z-index: 2;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: 1000px;
+    margin-right: 10px;
+    padding: 40px 18px 10px;
+    background-color: #e4e4e4;
+    border-radius: 1rem 1rem 1rem 1rem;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+}
+
+.hide-sidebar {
+    display: none;
+}
+
+.shadow {
+    border: 1px solid #d8d8d8;
+    -webkit-box-shadow: 0 0 6px hsla(0, 0%, 61.6%, .33);
+}
+
+.title-sidebar-menu {
+    text-align: center;
+}
+
+.title-sidebar-menu p {
+    text-align: center;
+    border-radius: 2rem;
+    display: inline-block;
+    background-color: #fff;
+    color: #565655;
+    padding: 8px 24px;
+    cursor: pointer;
+}
+
+.non-sticky {
+    position: fixed;
+    top: 400px;
+    left: 2vw;
+}
+
+.sticky {
+    position: fixed;
+    top: 45px;
+    left: 2vw;
+}
+
+.sticky-top {
+    top: 30px;
+}
+
+.menu-blue {
+    background-color: #2196f3;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.menu-white {
+    background-color: white;
+    color: #565655;
+    margin-top: 5px;
+}
+
+.menu-style {
+    text-align: left;
+    display: block;
+    border-radius: .5rem;
+    border: 1px solid #d8d8d8;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.show-off-sidebar {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #2ca1fd;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 1px solid #d8d8d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: .5s ease-in-out;
+    z-index: 2;
+    margin-left: calc(((2vw + 280px) - 20px) / 2);
+}
+
+.off-sidebar {
+    margin-left: 5px;
+    left: 0vw;
+    -webkit-transition: .5s ease-in-out;
+}
+
+/* scrollbar theme */
+.wrapper-sidebar-menu::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+.wrapper-sidebar-menu::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 10px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+.wrapper-sidebar-menu::-webkit-scrollbar {
+    width: 20px;
+    height: 5px;
+}
+
+.wrapper-sidebar-menu {
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    scrollbar-width: thin;
 }

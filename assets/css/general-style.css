@@ -149,3 +149,9 @@ body {
     font-weight: 400;
 }
 
+
+/* scrollbar color theme */
+html {
+    --scrollbarBG: #e4e4e4;
+    --thumbBG: #2ca1fd;
+}
