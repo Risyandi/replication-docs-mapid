@@ -27,6 +27,10 @@
     }
 }
 
+.component {
+    margin-bottom: 20px;
+}
+
 /* content */
 .main-wrapper-content {
     width: 720px;
