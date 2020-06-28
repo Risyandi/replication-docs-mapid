@@ -19,13 +19,26 @@
     width: 100%;
 }
 
+@media only screen and (max-width: 426px) {
+    .wrapper-headline>.title-headline {
+        font-size: 30px;
+        min-height: 0px;
+        padding: 0 5px 0 5px;
+    }
+}
+
 /* content */
 .main-wrapper-content {
     width: 720px;
     max-width: 80vw;
     margin: auto;
-    margin-left: 400px;
     margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .main-wrapper-content {
+        margin-left: 400px;
+    }
 }
 
 .wrapper-content {
